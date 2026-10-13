@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff1f5">
+<title>For Nabila Selvya Putri ♡ Chapter 19</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--pink:#e98da9;--rose:#c85f82;--pale:#fff1f5;--cream:#fffaf7;--ink:#63424e;--muted:#9c7884;--line:#f1d4de;--white:#fffdfd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:13px clamp(16px,5vw,60px);background:#fffaf7eF;backdrop-filter:blur(12px);border-bottom:1px solid #f4dfe6}
+.brand{font:700 23px 'Dancing Script',cursive;color:var(--rose)}
+.navlinks{display:flex;gap:20px;font-size:12px;color:var(--muted)}
+.navlinks a{text-decoration:none}
+.hero{min-height:91vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:70px 20px;background:radial-gradient(ellipse at 12% 18%,#f9dce6 0,transparent 34%),radial-gradient(ellipse at 88% 78%,#f6dfd3 0,transparent 35%),linear-gradient(135deg,#fff8f7,#fff0f5)}
+.hero:before,.hero:after{content:'✿';position:absolute;color:#e9a3b8;opacity:.55;font-size:100px;animation:drift 7s ease-in-out infinite}
+.hero:before{left:5%;top:15%;transform:rotate(-18deg)}.hero:after{right:7%;bottom:12%;font-size:75px;animation-delay:1.4s}
+@keyframes drift{50%{translate:0 -16px;rotate:8deg}}
+.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--rose);font-weight:700}
+.hero h1{font:500 clamp(42px,8vw,86px)/1.12 'Playfair Display',serif;margin:22px auto 14px;max-width:900px}
+.hero h1 em{font-family:'Dancing Script',cursive;color:var(--rose);font-size:1.12em}
+.hero p{max-width:530px;margin:0 auto 26px;color:var(--muted);line-height:1.9;font-size:14px}
+.script{font:600 28px 'Dancing Script',cursive;color:var(--rose)}
+.btn{border:0;border-radius:99px;background:var(--rose);color:white;padding:13px 22px;box-shadow:0 9px 25px #c85f8228;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px #c85f8238}
+.btn.alt{background:white;color:var(--rose);border:1px solid var(--line);box-shadow:none}
+.hero .scroll-note{font-size:11px;letter-spacing:1px;margin-top:42px;color:#b48c99}
+section{padding:82px 20px}
+.wrap{width:min(100%,980px);margin:auto}
+.section-head{text-align:center;margin:0 auto 35px}
+.section-head h2{font:500 clamp(31px,5vw,49px)/1.2 'Playfair Display',serif;margin:12px 0}
+.section-head p{max-width:570px;margin:auto;color:var(--muted);font-size:13px;line-height:1.9}
+.intro-card{max-width:760px;margin:auto;display:grid;grid-template-columns:110px 1fr;gap:22px;align-items:center;padding:24px;background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 40px #8f506010}
+.heart-seal{width:100px;height:100px;display:grid;place-items:center;border-radius:50%;background:var(--pale);font-size:42px}
+.intro-card h3{font:500 25px 'Playfair Display',serif;margin:0 0 8px}
+.intro-card p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.gallery-section{background:#fff7f8}
+.toolbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 auto 28px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.memory{background:white;padding:10px 10px 15px;border-radius:4px;box-shadow:0 8px 25px #75465313;transform:rotate(-1deg);transition:.25s;min-width:0}
+.memory:nth-child(3n+2){transform:rotate(1.4deg)}.memory:hover{transform:translateY(-5px) rotate(0)}
+.photo{aspect-ratio:4/4.7;background:linear-gradient(145deg,#fce4eb,#f8d9e4);display:grid;place-items:center;position:relative;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:none}
+.photo.has img{display:block}
+.placeholder{text-align:center;padding:12px;color:#b7798e;font-size:12px;line-height:1.8}
+.photo.has .placeholder{display:none}
+.memory-caption{font:600 22px 'Dancing Script',cursive;text-align:center;color:#966477;margin:12px 0 3px;overflow-wrap:anywhere}
+.memory-note{font-size:10px;text-align:center;color:#b18e99;min-height:15px}
+.photo-tools{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.photo-tools label,.tiny-btn{font-size:10px;color:var(--rose);border:1px solid var(--line);background:#fff9fb;border-radius:30px;padding:7px 10px;cursor:pointer}
+.photo-tools input{display:none}
+.tiny-btn{font-family:inherit}
+.edit-tip{text-align:center;color:var(--muted);font-size:11px;line-height:1.8;margin:22px auto 0}
+.memories-count{font-size:12px;text-align:center;color:var(--rose);margin:0 0 18px}
+.timeline{max-width:700px;margin:auto;position:relative}
+.timeline:before{content:'';position:absolute;left:18px;top:8px;bottom:8px;width:1px;background:#e9b5c5}
+.moment{position:relative;padding:0 0 25px 54px}
+.moment:before{content:'♡';position:absolute;left:6px;top:0;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#fff0f5;color:var(--rose);font-size:13px}
+.moment-card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.moment-card h3{font:500 22px 'Playfair Display',serif;margin:0 0 7px}
+.moment-card p{font-size:13px;color:var(--muted);line-height:1.8;margin:0;white-space:pre-wrap}
+.letter-section{background:#f9e7ed}
+.editor{max-width:700px;margin:0 auto 25px;background:#fff9fb;border:1px solid var(--line);border-radius:18px;padding:20px}
+.editor summary{cursor:pointer;color:var(--rose);font-size:13px;font-weight:700}
+.field{display:flex;flex-direction:column;gap:7px;margin-top:15px}
+.field label{font-size:10px;font-weight:700;letter-spacing:1px;color:#a16f80}
+.field input,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:white;color:var(--ink);outline:none}
+.field textarea{min-height:100px;line-height:1.8;resize:vertical}
+.letter{max-width:700px;margin:auto;padding:clamp(25px,7vw,58px);background:#fffdf9;box-shadow:0 14px 40px #80506012;position:relative}
+.letter:before{content:'♡';display:block;text-align:center;font-size:34px;color:var(--pink);margin-bottom:16px}
+.letter h2{text-align:center;font:500 clamp(28px,5vw,40px) 'Playfair Display',serif;margin:0 0 25px}
+.letter-body{font-size:14px;line-height:2.05;color:#846572;white-space:pre-wrap;overflow-wrap:anywhere}
+.signature{text-align:right;font:600 28px 'Dancing Script',cursive;color:var(--rose);margin-top:25px}
+.wish{text-align:center;background:radial-gradient(ellipse at 50% 0,#fbe3eb,transparent 65%),var(--cream)}
+.cake{font-size:67px;margin:25px 0;filter:drop-shadow(0 8px 8px #c85f8218)}
+.reveal{display:none;max-width:600px;margin:25px auto 0;padding:28px;background:white;border:1px solid var(--line);border-radius:20px;line-height:1.9;animation:pop .5s ease}
+.reveal.show{display:block}
+@keyframes pop{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.reveal h3{font:500 30px 'Playfair Display',serif;margin:5px 0 12px}
+footer{text-align:center;padding:28px 15px;background:#fff6f7;color:#b18b98;font-size:10px;letter-spacing:1.4px}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+@media(max-width:650px){.navlinks{gap:11px;font-size:10px}.navlinks a:nth-child(2){display:none}.hero{min-height:85vh}.hero:before{font-size:60px}.hero:after{font-size:48px}.intro-card{grid-template-columns:1fr;text-align:center;justify-items:center}.heart-seal{width:78px;height:78px;font-size:34px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.memory{padding:7px 7px 12px}.memory-caption{font-size:19px}.photo-tools{gap:5px}.photo-tools label,.tiny-btn{font-size:9px;padding:7px 8px}section{padding:65px 15px}}
+@media(max-width:370px){.gallery{gap:9px}.memory-caption{font-size:17px}.navlinks{gap:8px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<nav class="nav">
+  <div class="brand">for my ayang ♡</div>
+  <div class="navlinks">
+    <a href="#gallery">Kenangan</a><a href="#timeline">Cerita kita</a><a href="#letter">Surat</a><a href="#wish">Kejutan</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">A tiny website, made with a whole lot of love</div>
+    <h1>Happy 19th Birthday,<br><em>Nabila Selvya Putri</em></h1>
+    <p>Untuk ayang booboobku — hari ini dunia merayakan kamu, dan aku ingin ikut merayakan semua hal indah tentang dirimu. Semoga halaman kecil ini bisa jadi satu kenangan manis yang kamu simpan. ♡</p>
+    <a class="btn" href="#gallery" style="display:inline-block;text-decoration:none">Buka album kenangan ♡</a>
+    <div class="scroll-note">SCROLL PELAN-PELAN, AYANG ↓</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="intro-card">
+      <div class="heart-seal">🎀</div>
+      <div><h3>For my ayang booboobku</h3>
+      <p>Selamat datang di sudut kecil yang kubuat khusus untukmu. Ada foto-foto yang bisa kamu isi, cerita yang bisa kamu ubah, dan surat yang kutulis dari hati. Selamat memasuki chapter 19, Nabila. Semoga tahun ini memperlakukanmu dengan lembut.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Little moments, big feelings</div>
+      <h2>Our little memory lane</h2>
+      <p>Isi bingkai ini dengan foto favorit kalian. Bisa foto berdua, foto ayang yang paling kamu suka, atau momen sederhana yang berarti banyak.</p>
+    </div>
+    <div class="toolbar">
+      <button class="btn" onclick="document.getElementById('bulkPhotos').click()">＋ Tambahkan beberapa foto</button>
+      <input id="bulkPhotos" type="file" accept="image/*" multiple hidden>
+      <button class="btn alt" onclick="resetPhotos()">Reset foto</button>
+    </div>
+    <p class="memories-count" id="photoCount">3 tempat kenangan menunggu diisi ♡</p>
+    <div class="gallery" id="galleryGrid">
+      <article class="memory">
+        <div class="photo"><img alt="Kenangan pertama"><div class="placeholder">♡<br>Letakkan kenangan pertama di sini</div></div>
+        <div class="memory-caption" contenteditable="true" spellcheck="false">the beginning</div>
+        <div class="memory-note" contenteditable="true" spellcheck="false">Tulis tanggal atau cerita kecil...</div>
+        <div class="photo-tools"><label>＋ Pilih foto<input type="file" accept="image/*" onchange="loadPhoto(this)"></label><button class="tiny-btn" onclick="removePhoto(this)">Hapus foto</button></div>
+      </article>
+      <article class="memory">
+        <div class="photo"><img alt="Momen favorit"><div class="placeholder">✧<br>Momen yang selalu bikin senyum</div></div>
+        <div class="memory-caption" contenteditable="true" spellcheck="false">my happy place</div>
+        <div class="memory-note" contenteditable="true" spellcheck="false">Tulis tanggal atau cerita kecil...</div>
+        <div class="photo-tools"><label>＋ Pilih foto<input type="file" accept="image/*" onchange="loadPhoto(this)"></label><button class="tiny-btn" onclick="removePhoto(this)">Hapus foto</button></div>
+      </article>
+      <article class="memory">
+        <div class="photo"><img alt="Kenangan yang disimpan"><div class="placeholder">♡<br>Kenangan yang ingin disimpan</div></div>
+        <div class="memory-caption" contenteditable="true" spellcheck="false">forever a favorite</div>
+        <div class="memory-note" contenteditable="true" spellcheck="false">Tulis tanggal atau cerita kecil...</div>
+        <div class="photo-tools"><label>＋ Pilih foto<input type="file" accept="image/*" onchange="loadPhoto(this)"></label><button class="tiny-btn" onclick="removePhoto(this)">Hapus foto</button></div>
+      </article>
+    </div>
+    <p class="edit-tip">Tip: klik judul atau catatan di bawah foto untuk mengeditnya. Foto yang kamu pilih tampil lokal di browser ini.</p>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">A story still being written</div>
+      <h2>Little chapters of us</h2>
+      <p>Ubah judul dan ceritanya sesuai perjalanan kalian. Tidak harus momen besar — hal kecil juga pantas dikenang.</p>
+    </div>
+    <div class="editor">
+      <details>
+        <summary>✎ Edit cerita kenangan</summary>
+        <div class="field"><label>KENANGAN 01 — JUDUL</label><input data-bind="t1" value="The day our story began"></div>
+        <div class="field"><label>CERITA</label><textarea data-bind="d1">Mungkin saat itu kita belum tahu sejauh apa cerita ini akan berjalan. Tapi aku bersyukur karena dari banyaknya kemungkinan, kita bisa saling mengenal.</textarea></div>
+        <div class="field"><label>KENANGAN 02 — JUDUL</label><input data-bind="t2" value="The little things"></div>
+        <div class="field"><label>CERITA</label><textarea data-bind="d2">Candaan receh, obrolan sederhana, dan kabar kecil darimu sering kali jadi bagian favorit dari hariku.</textarea></div>
+        <div class="field"><label>KENANGAN 03 — JUDUL</label><input data-bind="t3" value="More memories to come"></div>
+        <div class="field"><label>CERITA</label><textarea data-bind="d3">Masih banyak tempat, cerita, dan hal baru yang semoga bisa kita temui. Untuk sekarang, aku ingin menikmati prosesnya satu per satu.</textarea></div>
+      </details>
+    </div>
+    <div class="timeline">
+      <div class="moment"><div class="moment-card"><h3 id="showt1">The day our story began</h3><p id="showd1"></p></div></div>
+      <div class="moment"><div class="moment-card"><h3 id="showt2">The little things</h3><p id="showd2"></p></div></div>
+      <div class="moment"><div class="moment-card"><h3 id="showt3">More memories to come</h3><p id="showd3"></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="letter-section" id="letter">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">From my heart to yours</div>
+      <h2>A letter for ayang ♡</h2>
+      <p>Surat ini bisa kamu ubah supaya terdengar seperti dirimu sendiri. Tambahkan kenangan, doa, atau kata-kata yang hanya kalian berdua pahami.</p>
+    </div>
+    <div class="editor">
+      <details open>
+        <summary>✎ Edit surat ulang tahun</summary>
+        <div class="field"><label>ISI SURAT</label><textarea id="letterInput" style="min-height:250px">Happy birthday yang ke-19, ayang booboobku, Nabila Selvya Putri! ♡
+
+Selamat bertambah usia, sayang. Hari ini adalah hari yang spesial karena seseorang seindah kamu hadir di dunia. Aku berharap di umur 19 ini, kamu selalu diberi kesehatan, hati yang tenang, banyak kebahagiaan, dan keberanian untuk mengejar semua impianmu.
+
+Terima kasih sudah hadir dan menjadi bagian dari cerita hidupku. Aku suka hal-hal sederhana tentang kita: obrolan kecil, tawa yang muncul tiba-tiba, dan momen ketika kehadiranmu saja sudah membuat hari terasa lebih baik.
+
+Aku mungkin tidak selalu bisa membuat semuanya sempurna, tapi aku ingin terus belajar menjadi seseorang yang bisa mendengarkanmu, mendukungmu, dan ikut bahagia melihatmu tumbuh. Semoga kamu selalu ingat bahwa kamu berharga, bukan hanya di hari ulang tahunmu, tetapi juga di hari-hari biasa ketika kamu mungkin lupa melihat betapa hebatnya dirimu.
+
+Untuk chapter 19 ini, semoga lebih banyak pintu baik terbuka untukmu. Semoga hal-hal yang kamu usahakan perlahan menemukan jalannya, semoga kamu dikelilingi orang-orang tulus, dan semoga kamu punya banyak alasan untuk tersenyum.
+
+Selamat ulang tahun, ayangku. Mari kumpulkan lebih banyak cerita indah, satu kenangan kecil demi satu kenangan kecil.
+
+I’m so happy that you exist. Happy 19th birthday, my favorite person. I love you. ♡</textarea></div>
+        <div class="field"><label>NAMA DI AKHIR SURAT</label><input id="senderInput" value="Your favorite person ♡"></div>
+      </details>
+    </div>
+    <article class="letter">
+      <h2>Untuk <span>Nabila</span>, ayang booboobku ♡</h2>
+      <div class="letter-body" id="letterPreview"></div>
+      <div class="signature">With all my love,<br><span id="senderPreview">Your favorite person ♡</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="wish" id="wish">
+  <div class="wrap">
+    <div class="eyebrow">One last little surprise</div>
+    <h2 style="font:500 clamp(33px,6vw,52px) 'Playfair Display',serif;margin:13px 0">Make a wish, birthday girl</h2>
+    <p style="color:var(--muted);font-size:13px;line-height:1.9">Pejamkan mata sebentar, buat satu harapan, lalu buka kejutan kecilmu. 🎀</p>
+    <div class="cake">🎂</div>
+    <button class="btn" id="revealBtn" onclick="revealSurprise()">Buka pesan rahasia ♡</button>
+    <div class="reveal" id="reveal">
+      <div style="font-size:36px">💌</div>
+      <h3>To my birthday girl</h3>
+      <p>Nabila, semoga di umur 19 ini kamu semakin dekat dengan semua hal yang kamu impikan. Semoga kamu selalu punya tempat untuk pulang, alasan untuk tertawa, dan orang-orang yang menyayangimu dengan tulus. Terima kasih sudah menjadi kamu — seseorang yang begitu berarti dalam ceritaku.</p>
+      <p class="script">Happy birthday, ayang booboobku! ♡</p>
+      <p style="font-size:12px;color:var(--muted)">19 tahun kamu bersinar, dan masih banyak bab indah yang menunggu.</p>
+    </div>
+  </div>
+</section>
+<footer>MADE WITH LOVE, JUST FOR NABILA SELVYA PUTRI ♡ · CHAPTER 19</footer>
+
+<script>
+function loadPhoto(input){
+  const file=input.files&&input.files[0]; if(!file)return;
+  if(!file.type.startsWith('image/')){alert('Pilih file gambar ya, ayang ♡');input.value='';return;}
+  const reader=new FileReader();
+  reader.onload=e=>{
+    const card=input.closest('.memory');
+    const frame=card.querySelector('.photo');
+    const img=frame.querySelector('img');
+    img.src=e.target.result;frame.classList.add('has');
+    updateCount();
+  };
+  reader.readAsDataURL(file);
+}
+function removePhoto(button){
+  const card=button.closest('.memory'),frame=card.querySelector('.photo'),img=frame.querySelector('img');
+  img.removeAttribute('src');frame.classList.remove('has');
+  const input=card.querySelector('input[type=file]');if(input)input.value='';
+  updateCount();
+}
+function resetPhotos(){
+  document.querySelectorAll('.memory').forEach(card=>{
+    const frame=card.querySelector('.photo');frame.classList.remove('has');
+    frame.querySelector('img').removeAttribute('src');
+    const input=card.querySelector('input[type=file]');if(input)input.value='';
+  });updateCount();
+}
+function updateCount(){
+  const n=document.querySelectorAll('.photo.has').length;
+  document.getElementById('photoCount').textContent=n
+   ? n+' kenangan sudah ditambahkan ♡'
+   : 'Tempat kenangan menunggu diisi ♡';
+}
+document.getElementById('bulkPhotos').addEventListener('change',function(){
+  const files=Array.from(this.files||[]).filter(f=>f.type.startsWith('image/'));
+  if(!files.length)return;
+  const grid=document.getElementById('galleryGrid');
+  files.forEach(file=>{
+    const card=document.createElement('article');card.className='memory';
+    card.innerHTML='<div class="photo"><img alt="Kenangan baru"><div class="placeholder">♡<br>Kenangan baru</div></div><div class="memory-caption" contenteditable="true" spellcheck="false">another little memory</div><div class="memory-note" contenteditable="true" spellcheck="false">Tulis tanggal atau cerita kecil...</div><div class="photo-tools"><label>＋ Ganti foto<input type="file" accept="image/*" onchange="loadPhoto(this)"></label><button class="tiny-btn" onclick="removePhoto(this)">Hapus foto</button></div>';
+    grid.appendChild(card);
+    const reader=new FileReader();reader.onload=e=>{const frame=card.querySelector('.photo');frame.querySelector('img').src=e.target.result;frame.classList.add('has');updateCount();};reader.readAsDataURL(file);
+  });this.value='';
+});
+function syncTimeline(){
+  for(let i=1;i<=3;i++){
+    const title=document.querySelector('[data-bind="t'+i+'"]').value;
+    const desc=document.querySelector('[data-bind="d'+i+'"]').value;
+    document.getElementById('showt'+i).textContent=title;
+    document.getElementById('showd'+i).textContent=desc;
+  }
+}
+document.querySelectorAll('[data-bind]').forEach(el=>el.addEventListener('input',syncTimeline));
+function syncLetter(){
+  document.getElementById('letterPreview').textContent=document.getElementById('letterInput').value;
+  document.getElementById('senderPreview').textContent=document.getElementById('senderInput').value||'Someone who loves you ♡';
+}
+document.getElementById('letterInput').addEventListener('input',syncLetter);
+document.getElementById('senderInput').addEventListener('input',syncLetter);
+syncTimeline();syncLetter();
+
+function revealSurprise(){
+  document.getElementById('reveal').classList.add('show');
+  const btn=document.getElementById('revealBtn');btn.textContent='A little love, just for you ♡';btn.disabled=true;
+  document.getElementById('reveal').scrollIntoView({behavior:'smooth',block:'center'});
+  launchConfetti();
+}
+function launchConfetti(){
+  const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');
+  const ratio=window.devicePixelRatio||1;
+  canvas.width=innerWidth*ratio;canvas.height=innerHeight*ratio;
+  canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.scale(ratio,ratio);
+  const colors=['#f3a9bb','#d66e8c','#f6d7a7','#d9c2e8','#fff0f5'];
+  const pieces=Array.from({length:130},()=>({x:Math.random()*innerWidth,y:-Math.random()*innerHeight,s:3+Math.random()*5,v:2+Math.random()*4,d:(Math.random()-.5)*2,c:colors[Math.floor(Math.random()*colors.length)]}));
+  let frame=0;
+  function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);pieces.forEach(p=>{p.y+=p.v;p.x+=p.d;ctx.fillStyle=p.c;ctx.fillRect(p.x,p.y,p.s,p.s*1.4)});if(++frame<200)requestAnimationFrame(draw);else ctx.clearRect(0,0,innerWidth,innerHeight);}
+  draw();
+}
+</script>
+</body>
+</html>
